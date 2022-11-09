@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registration</title>
+</head>
+
+<body>
+    <div class="container-fluid ">
+        <div class="form-body">
+            <div class="row" style="margin-left:30%">
+                <div class="form-holder">
+                    <div class="form-content">
+                        <div class="form-items">
+                            <h3 class="text-center">Registration Form</h3>
+                            <p class="text-center">Fill Complete Detail Here</p>
+                            
+                            <form action="/user/signup" method="post"> 
+    
+                                <div class="col-md-12">
+                                   <input onkeyup="validateName()" id="eName" class="form-control" type="text" name="name" placeholder="Full Name" autocomplete="off">
+                                   <small id="userName"></small>
+                                </div>
+    
+                                <div class="col-md-12">
+                                    <input onkeyup="validateEmail()" id="email" class="form-control" type="email" name="email" placeholder="E-mail Address" autocomplete="off">
+                                    <small id="emailErr"></small>
+                                </div>
+    
+                               <div class="col-md-12">
+                                    <input t onkeyup="validatePassword()" id="password" class="form-control" type="password" name="password" placeholder="Password" autocomplete="off">
+                                    <small id="passErr"></small>
+                               </div>
+
+                        
+                                
+                                <div class="form-button mt-3">
+                                    <!-- <button onclick="return validateRegistor()" id="submit" type="submit" class="btn btn-primary ml-3 text-center">Register</button> -->
+                                    <button type="submit">Submit</button>
+                                    <a href="/login">Login</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+      </div>
+
+      <!-- <script src="/js/Register.js"> -->
+
+      </script>
+</body>
+
+</html>
